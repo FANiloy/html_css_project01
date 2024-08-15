@@ -1,0 +1,401 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* Global CSS Style */
+
+.container {
+  max-width: 1240px;
+  margin: 0% auto;
+}
+
+.between {
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+}
+
+.navbar {
+  max-width: 93%;
+  margin: 0% auto;
+  display: flex;
+  gap: 60px;
+  padding: 20px 40px;
+  color: rgb(51, 134, 43);
+
+  & h3 {
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  & div {
+    background-color: gainsboro;
+    background: #17191a;
+    padding: 8px;
+    display: flex;
+    gap: 8px;
+    font-weight: 600;
+    border-radius: 8px;
+  }
+
+  & h4 {
+    color: white;
+    padding-right: 1px;
+    cursor: pointer;
+  }
+
+  & img {
+    cursor: pointer;
+  }
+}
+
+.banner-image {
+  position: absolute;
+  width: 50dvw;
+  right: 0;
+  top: 0;
+  z-index: -155;
+  height: 680px;
+  width: auto;
+}
+
+.banner-section {
+  padding: 120px 0;
+  margin-left: 200px;
+
+  & h1 {
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(51, 134, 43);
+  }
+
+  & div {
+    padding: 20px 0;
+    display: flex;
+    gap: 10px;
+    color: rgb(41, 0, 46);
+    align-items: center;
+    justify-items: center;
+    font-size: 26px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+}
+
+button {
+  color: rgb(255, 166, 0);
+  background-color: #17191a;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: none;
+}
+
+button:hover {
+  color: rgb(35, 218, 18);
+  background-color: #202020ad;
+  cursor: pointer;
+}
+
+.target-section {
+  padding: 140px 0;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .details-section {
+    & h2 {
+      font-size: 68px;
+    }
+
+    .details {
+      padding: 40px 0;
+      color: gray;
+      font-size: 24px;
+    }
+
+    .app-store {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 28px;
+      background-color: #cce8fd;
+      border-radius: 20px;
+      width: fit-content;
+
+      & p {
+        font-size: 14px;
+        color: #535353;
+      }
+
+      & h3 {
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      & img {
+        width: 28px;
+      }
+    }
+  }
+}
+
+/* Track Section */
+
+.track-section {
+  position: relative;
+
+  .bg-track {
+    position: absolute;
+    z-index: -1;
+    left: 0%;
+    top: 10%;
+  }
+
+  .left-section {
+    & h2 {
+      font-size: 85px;
+    }
+
+    .image-grid {
+      display: flex;
+    }
+
+    & div {
+      gap: 20px;
+    }
+  }
+
+  .right-section {
+    & h3 {
+      font-size: 40px;
+      color: gery;
+      padding-right: 8rem;
+    }
+
+    .details-div {
+      display: flex;
+      align-items: start;
+      gap: 30px;
+      margin-top: 60px;
+
+      & div {
+        padding-top: 20px;
+
+        & h2 {
+          font-size: 24px;
+          font-size: 600;
+        }
+      }
+    }
+  }
+}
+
+.company {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Join Section */
+
+.join {
+  width: 90%;
+  margin: 120px auto;
+  background-color: rgb(150, 230, 255);
+  border-radius: 56px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  .details {
+    display: flex;
+    justify-content: center;
+    margin: 0% auto;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  & h2 {
+    font-size: 68px;
+  }
+
+  .app-store {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 28px;
+    background-color: #001c31;
+    border-radius: 20px;
+    width: fit-content;
+
+    & p {
+      font-size: 14px;
+      color: #8f8f8f;
+    }
+
+    & h3 {
+      font-size: 18px;
+      font-weight: 600;
+      color: white;
+    }
+
+    & img {
+      width: 28px;
+    }
+  }
+}
+
+.copyright {
+  background-color: #080000;
+  text-align: center;
+  color: cadetblue;
+  padding: 20px;
+}
+
+/* Responsive */
+
+@media (max-device-width: 767px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .between {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .banner-section {
+    padding: 60x 16px;
+    position: relative;
+    right: 180px;
+
+    & h1 {
+      font-size: 38px;
+      font-weight: 600;
+      color: rgb(51, 134, 43);
+    }
+
+    & div {
+      padding: 10px;
+      font-size: 20px;
+    }
+  }
+
+  .banner-image {
+    position: absolute;
+    right: 0;
+    z-index: -155;
+    height: 500px;
+    width: auto;
+    margin-top: 45px;
+  }
+
+  .track-section {
+    .bg-track {
+      left: 0%;
+      top: 0%;
+      width: 100%;
+    }
+
+    .left-section {
+      & h2 {
+        font-size: 45px;
+      }
+
+      .image-grid {
+        padding-top: 40px;
+        padding-left: 40px;
+        gap: 16px;
+      }
+
+      & div {
+        width: 130px;
+        gap: 16px;
+      }
+
+      & div:nth-child(2) {
+        margin-top: 40px;
+      }
+    }
+
+    .right-section {
+      & h3 {
+        font-size: 24px;
+        color: gery;
+        padding-right: 0rem;
+      }
+
+      .details-div {
+        display: flex;
+        align-items: start;
+        gap: 16px;
+        margin-top: 60px;
+
+        & div {
+          padding-top: 20px;
+        }
+      }
+    }
+  }
+  .company {
+    margin-top: 50px;
+    background-color: #ddd;
+    padding: 20px 0;
+    border-radius: 20px;
+  }
+
+  .join {
+    margin: 80px auto;
+    border-radius: 24px;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+
+    .details {
+      margin: 16px;
+    }
+
+    & h2 {
+      font-size: 40px;
+    }
+
+    .app-store {
+      gap: 12px;
+      padding: 12px 24px;
+
+      & h3 {
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+      }
+
+      & img {
+        width: 25px;
+      }
+    }
+
+    & img {
+      width: 100%;
+    }
+  }
+}
